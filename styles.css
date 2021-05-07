@@ -1,0 +1,285 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+body {
+  background-image: url(./banner.jpg);
+  font-family: sans-serif;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  gap: 40px;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.icon-container:hover {
+  background-color: #ed2d34;
+  transition-delay: 0.2s;
+  color: white;
+  transition: ease-in 0.3s;
+  border-radius: 50%;
+  padding: 13px;
+}
+
+#homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: auto;
+  width: auto; */
+}
+
+.section {
+  padding: 10px 10%;
+}
+
+.btn {
+  border-radius: 50px;
+  border: 2px solid black;
+  width: 20%;
+  height: 10%;
+  padding: 10px 5%;
+  font-weight: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s linear;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.btn-text {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #ed2d34;
+  border-color: #ed2d34;
+}
+
+.page-heading {
+  padding-top: 10%;
+  font-size: xx-large;
+}
+
+.page-subtitle {
+  font-size: x-large;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 40px;
+}
+
+.btn-1 {
+  border-radius: 50px;
+  border: 2px solid black;
+  /* width: 20%;
+  height: 10%; */
+  padding: 10px 5%;
+  font-weight: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s linear;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-1:hover {
+  color: white;
+  background-color: #ed2d34;
+  border-color: #ed2d34;
+}
+
+#productPage {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+  font-size: 50px;
+}
+
+.product {
+  display: grid;
+  place-items: center;
+}
+
+#product-slider img {
+  width: 500px !important;
+  height: 300px !important;
+  object-fit: contain;
+}
+
+.testimonial-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  font-size: xxx-large;
+}
+
+.testimonial-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+}
+
+#testimonial-slider {
+  margin-top: 10%;
+}
+
+.testimonial-img {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  max-width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  border-style: none;
+  margin: auto;
+  padding: 10px;
+}
+
+.testimonial-message {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 25px;
+  font-family: sans-serif;
+  margin-bottom: 0 !important;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  color: #464646;
+}
+
+.testimonial i {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #c6c6c6;
+  padding-bottom: 10%;
+}
+
+.testimonial-name {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  padding: 20px;
+  color: #464646;
+  margin: auto;
+  text-align: center;
+}
