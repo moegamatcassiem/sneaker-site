@@ -223,26 +223,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5%;
-  font-size: xxx-large;
+  padding-top: 16%;
+  font-size: 30px;
 }
 
 .testimonial-subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5em;
+  font-size: 50px;
 }
 
 #testimonial-slider {
-  margin-top: 10%;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-img {
   display: flex;
   align-items: center;
-  width: 70px;
-  max-width: 200px;
+  width: 40px;
+  max-width: 100px;
   border-radius: 50%;
   display: inline-block;
   overflow: hidden;
